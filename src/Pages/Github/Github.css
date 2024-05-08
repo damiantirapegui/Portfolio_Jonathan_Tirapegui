@@ -1,0 +1,17 @@
+.github-container {
+  /* display: flex; */
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(110deg, #0e2779, #0f52ba);
+}
+.github-title {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  color: #4ade80;
+}
+.ul-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

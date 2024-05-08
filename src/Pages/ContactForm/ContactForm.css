@@ -1,0 +1,51 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact-me-title {
+  color: #4ade80;
+  font-size: 40px;
+}
+.form-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6891e9, #d9e5ff);
+  border-radius: 10px;
+  /* gap: 2rem; */
+  width: 30%;
+  height: 50%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 85%;
+}
+.input-field {
+  width: 90%;
+  height: 3rem;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid rgb(197, 143, 197);
+  background-color: transparent;
+}
+
+.message {
+  height: 8rem;
+  width: 90%;
+  font-size: 20px;
+  font-family: sans-serif;
+  border: none;
+  background-color: #6891e967;
+  resize: none;
+}
+.submit-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
