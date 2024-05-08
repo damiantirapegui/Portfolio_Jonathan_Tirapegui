@@ -1,5 +1,6 @@
 .about-body {
   margin-top: 25rem;
+  height: 100vh;
 }
 
 .about-background-img {
@@ -12,11 +13,12 @@
 .responsive-container {
   display: flex;
   justify-content: end;
-  padding: 12rem 10rem 0 0;
+  padding: 12rem 1rem 0 0;
+  /* width: 100%; */
 }
 
 .text-container {
-  width: 35%;
+  width: 45%;
 }
 
 .about-title {
@@ -26,5 +28,5 @@
 
 .text-container p {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
 }

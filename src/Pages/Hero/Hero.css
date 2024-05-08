@@ -3,6 +3,11 @@
   justify-content: end;
   margin-top: 9rem;
   padding-right: 9rem;
+  /* background-color: #011a6d; */
+}
+
+.profile-img {
+  border-radius: 50%;
 }
 
 .hero-article {

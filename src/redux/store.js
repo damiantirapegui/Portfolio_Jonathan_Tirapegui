@@ -1,5 +1,5 @@
-import { configureStore } from "/node_modules/.vite/deps/@reduxjs_toolkit.js?v=2ddaddbc";
-import rootReducer from "/@fs/C:/Users/Damian/OneDrive/Dokument/FE23/Frontend-ramverk/Portfolio-React/src/redux/reducers.js";
+import { configureStore } from "@reduxjs/toolkit";
+import rootReducer from "./reducers";
 
 const store = configureStore({
   reducer: rootReducer,

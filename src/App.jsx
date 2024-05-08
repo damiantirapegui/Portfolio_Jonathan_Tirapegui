@@ -1,6 +1,7 @@
 import "./App.css";
 import { About } from "./Pages/About/About";
 import { ContactForm } from "./Pages/ContactForm/ContactForm";
+// import { ContactForm } from "./Pages/ContactForm";
 import Github from "./Pages/Github/Github";
 
 import { Hero } from "./Pages/Hero/Hero";

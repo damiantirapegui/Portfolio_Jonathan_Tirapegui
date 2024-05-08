@@ -1,8 +1,14 @@
+// import {
+//   FETCH_REPOS_FAILURE,
+//   FETCH_REPOS_REQUEST,
+//   FETCH_REPOS_SUCCESS,
+// } from "/@fs/C:/Users/Damian/OneDrive/Dokument/FE23/Frontend-ramverk/Portfolio-React/src/redux/actions.js";
+
 import {
   FETCH_REPOS_FAILURE,
   FETCH_REPOS_REQUEST,
   FETCH_REPOS_SUCCESS,
-} from "/@fs/C:/Users/Damian/OneDrive/Dokument/FE23/Frontend-ramverk/Portfolio-React/src/redux/actions.js";
+} from "./action";
 
 const initialState = {
   repos: [],

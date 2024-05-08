@@ -5,7 +5,13 @@ import {
   fetchReposFailure,
   fetchReposRequest,
   fetchReposSuccess,
-} from "../../redux/actions";
+} from "../../redux/action";
+// import {
+//   fetchReposFailure,
+//   fetchReposRequest,
+//   fetchReposSuccess,
+// }
+//  from "../../redux/actions";
 import "./Github.css";
 
 function Github() {
