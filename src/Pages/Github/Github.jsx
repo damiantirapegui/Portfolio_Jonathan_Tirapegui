@@ -46,23 +46,26 @@ function Github() {
       </div>
 
       {error && <p>Error: {error}</p>}
+
       <div className="ul-flexbox">
         {" "}
-        <ul className="list-container">
-          {repos &&
-            repos.map((repo) => (
-              <li key={repo.id}>
-                <a
-                  className="link-style"
-                  href={repo.html_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {repo.name}
-                </a>{" "}
-              </li>
-            ))}
-        </ul>
+        <div className="repo-card">
+          <ul className="list-container">
+            {repos &&
+              repos.map((repo) => (
+                <li className="links" key={repo.id}>
+                  <a
+                    className="link-style"
+                    href={repo.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {repo.name}
+                  </a>{" "}
+                </li>
+              ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

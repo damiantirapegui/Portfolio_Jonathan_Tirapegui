@@ -1,0 +1,28 @@
+.thank-you-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4ade80;
+  animation: slideIn 1s forwards 0.1s;
+}
+
+.message.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.center-text {
+  margin-top: 10px;
+  text-align: center;
+}

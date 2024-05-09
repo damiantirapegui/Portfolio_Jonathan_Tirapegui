@@ -1,6 +1,6 @@
 .about-body {
   margin-top: 25rem;
-  height: 100vh;
+  height: 70vh;
 }
 
 .about-background-img {
@@ -13,7 +13,7 @@
 .responsive-container {
   display: flex;
   justify-content: end;
-  padding: 12rem 1rem 0 0;
+
   /* width: 100%; */
 }
 

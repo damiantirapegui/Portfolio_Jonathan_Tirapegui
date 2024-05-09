@@ -24,7 +24,7 @@ export const Nav = () => {
           </a>
         </li>
         <li className="nav-menu">
-          <a href="#github" onClick={() => scrollToSection("github")}>
+          <a href="#github" onClick={() => scrollToSection("home")}>
             Github
           </a>
         </li>
@@ -32,9 +32,6 @@ export const Nav = () => {
           <a href="#contact" onClick={() => scrollToSection("contact")}>
             Contact
           </a>
-        </li>
-        <li className="nav-menu">
-          <a href="#education">Education</a>
         </li>
       </ul>
     </header>

@@ -1,3 +1,7 @@
+.home-body {
+  height: 100vh;
+}
+
 .img-container {
   display: flex;
   justify-content: end;

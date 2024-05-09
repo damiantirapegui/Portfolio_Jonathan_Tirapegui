@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   width: 95%;
+  z-index: 999;
 }
 
 .logo {
@@ -40,4 +41,8 @@
 .nav-menu a {
   text-decoration: none;
   color: white;
+}
+
+.active {
+  color: green;
 }

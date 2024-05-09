@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 
@@ -7,12 +8,16 @@ export const ContactForm = () => {
   const service = import.meta.env.VITE_SERVICE;
   const template = import.meta.env.VITE_TEMPLATE;
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+  const navigate = useNavigate();
+
+  const [clickedSubmit, setClickedSubmit] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(service);
     console.log(template);
     console.log(publicKey);
+    setClickedSubmit(true);
     emailjs
       .sendForm(`${service}`, `${template}`, form.current, {
         publicKey: `${publicKey}`,
@@ -20,6 +25,10 @@ export const ContactForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setTimeout(() => {
+            setClickedSubmit(false);
+            navigate("/thank-you"); // Dirigera till tack-sidan
+          }, 100);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -41,7 +50,11 @@ export const ContactForm = () => {
           <label>Message</label>
           <textarea className="message" name="message" />
           <div className="submit-container">
-            <input className="submit" type="submit" value="Send" />
+            <input
+              className={`submit ${clickedSubmit ? "clicked" : ""}`}
+              type="submit"
+              value="Send"
+            />
           </div>
         </form>
       </div>

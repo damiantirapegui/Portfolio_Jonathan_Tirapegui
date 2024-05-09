@@ -1,14 +1,11 @@
+import { Parallax } from "react-parallax";
 import "./About.css";
 
 export const About = () => {
   return (
-    <>
+    <Parallax bgImage="src/assets/internet.jpeg" strength={100}>
       <div className="about-body">
-        <img
-          className="about-background-img"
-          src="src/assets/internet.jpeg"
-          alt=""
-        />
+        <img className="about-background-img" src="" alt="" />
         <div className="responsive-container">
           <div className="text-container">
             <h1 className="about-title">Lets lära känna mig!</h1>
@@ -51,6 +48,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </Parallax>
   );
 };
