@@ -17,10 +17,23 @@
   gap: 10px;
 }
 
+.repo-cards {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  width: 100%;
+}
+
 .repo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(135deg, #6891e9, #d9e5ff);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  width: 20%;
+  height: 10rem;
 }
 
 .list-container {
@@ -35,4 +48,21 @@
 .link-style {
   text-decoration: none;
   color: black;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 15px;
+}
+
+.icons-second {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.repo-card-title {
+  text-align: center;
 }
