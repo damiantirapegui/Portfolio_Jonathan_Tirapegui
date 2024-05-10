@@ -1,3 +1,7 @@
+//
+//
+//Using redux in Github. Please checkout my redux folder to see how it works.
+
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
@@ -19,7 +23,7 @@ function Github() {
   const dispatch = useDispatch();
   const repos = useSelector((state) => state.repos);
   const error = useSelector((state) => state.error);
-  const accessKey = import.meta.env.VITE_ACCESS_KEY;
+  const accessKey = import.meta.env.VITE_ACCESS_KEY; //Hidden key for security purpose.
 
   useEffect(() => {
     async function fetchRepos() {
@@ -27,12 +31,12 @@ function Github() {
       try {
         const response = await axios.get("https://api.github.com/user/repos", {
           headers: {
-            Authorization: `Bearer ${accessKey}`,
+            Authorization: `Bearer ${accessKey}`, // This access key takes my two repositorys to my github page without using username.
           },
         });
-        dispatch(fetchReposSuccess(response.data));
+        dispatch(fetchReposSuccess(response.data)); //If my fetch works tree clean then we call this function.
       } catch (error) {
-        dispatch(fetchReposFailure(error.message));
+        dispatch(fetchReposFailure(error.message)); //If my fetch fails then send error to the console for trouble shoot perpose.
       }
     }
     fetchRepos();

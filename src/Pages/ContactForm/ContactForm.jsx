@@ -10,7 +10,7 @@ export const ContactForm = () => {
   const publicKey = import.meta.env.VITE_PUBLIC_KEY;
   const navigate = useNavigate();
 
-  const [clickedSubmit, setClickedSubmit] = useState(false);
+  const [clickedSubmit, setClickedSubmit] = useState(false); // Renders thankyou page when send button is pushed.
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,18 +20,19 @@ export const ContactForm = () => {
     setClickedSubmit(true);
     emailjs
       .sendForm(`${service}`, `${template}`, form.current, {
-        publicKey: `${publicKey}`,
+        // publicKey: `${publicKey}`,
       })
       .then(
         () => {
           console.log("SUCCESS!");
-          setTimeout(() => {
-            setClickedSubmit(false);
-            navigate("/thank-you"); // Dirigera till tack-sidan
-          }, 100);
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setTimeout(() => {
+            //setTime out in error to try the contact form without using my 200 free mail.
+            setClickedSubmit(false);
+            navigate("/thank-you");
+          }, 200);
         }
       );
   };

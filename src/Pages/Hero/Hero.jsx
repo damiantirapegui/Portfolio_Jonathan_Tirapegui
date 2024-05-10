@@ -1,3 +1,7 @@
+//
+//
+//This component is my Home/Start page. We use parallax for some cool text and scrolling effect.
+
 import { Parallax } from "react-parallax";
 import React, { useEffect } from "react";
 import "./Hero.css";
@@ -15,6 +19,7 @@ export const Hero = () => {
 
     const scrollY = window.scrollY;
 
+    //Move the text sideways to different direction when scrolling.
     greetingPhrase.style.transform = `translateX(${-scrollY}px)`;
     imJonathanTitle.style.transform = `translateX(${scrollY}px)`;
     heroParagraph.style.transform = `translateX(${-scrollY}px)`;

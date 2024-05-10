@@ -1,8 +1,6 @@
-// import {
-//   FETCH_REPOS_FAILURE,
-//   FETCH_REPOS_REQUEST,
-//   FETCH_REPOS_SUCCESS,
-// } from "/@fs/C:/Users/Damian/OneDrive/Dokument/FE23/Frontend-ramverk/Portfolio-React/src/redux/actions.js";
+//
+//
+// Manages state for repositories, handling loading states, successful retrievals, and errors.
 
 import {
   FETCH_REPOS_FAILURE,

@@ -1,6 +1,12 @@
+//
+//
+//This is my hidden component for when send button in contactForm is pressed.
+
 import React, { useState, useEffect, useRef } from "react";
 import "./ThankYou.css";
 import { useNavigate } from "react-router-dom";
+
+//We use useState to make the page not visible as default.
 
 const ThankYou = () => {
   const [visible, setVisible] = useState(false);
@@ -13,18 +19,18 @@ const ThankYou = () => {
     if (thankYouRef.current) {
       thankYouRef.current.scrollIntoView({ behavior: "smooth" });
     }
-
+    //After 5 seconds we want the setVisible to be removed and navigate me back to the contactForm
     const timeout = setTimeout(() => {
       window.close();
       navigate("/");
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timeout);
   }, [navigate]);
 
   useEffect(() => {
     if (visible) {
-      thankYouRef.current.scrollIntoView({ behavior: "smooth" });
+      thankYouRef.current.scrollIntoView({ behavior: "smooth" }); //If thankyou component is visible then scroll down automaticly with smoot behavior.
     }
   }, [visible]);
 

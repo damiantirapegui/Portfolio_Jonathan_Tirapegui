@@ -1,3 +1,7 @@
+//
+//
+// Configures the Redux store with the provided root reducer using the Redux Toolkit library.
+
 import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "./reducers";
 

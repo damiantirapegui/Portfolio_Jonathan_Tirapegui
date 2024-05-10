@@ -3,7 +3,7 @@ import "./Nav.css";
 export const Nav = () => {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: "smooth" });
+    section.scrollIntoView({ behavior: "smooth" }); //Scroll function for scroll smoothness
   };
 
   return (
