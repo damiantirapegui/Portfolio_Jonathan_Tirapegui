@@ -1,8 +1,4 @@
-# React + Vite
+This is my portfolio.
+In this project I have worked with vite and also added some parallax effect from react-parallax dependency. In my package.json file you can see all my dependencies that I have used for this project. I used redux to get my api from my github because I found this a bit extra challenging. My portfolio contains various components such as home/about/github and contact.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The portfolio is something that I will sit with more during the summer as I don't feel that it is completely finished in terms of style. But I hope it covers the criteria for this submission.
